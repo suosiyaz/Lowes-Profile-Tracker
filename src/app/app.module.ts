@@ -13,7 +13,6 @@ import { ErrorInterceptorProvider } from './_services/error.interceptor';
 import { AlertifyService } from './_services/alertify.service';
 import { ListsComponent } from './lists/lists.component';
 import { MemberListComponent } from './member-list/member-list.component';
-import { MessagesComponent } from './messages/messages.component';
 import { appRoutes } from './routes';
 import { AuthGuard } from './_guards/auth.guard';
 
@@ -25,7 +24,6 @@ import { AuthGuard } from './_guards/auth.guard';
       HomeComponent,
       ListsComponent,
       MemberListComponent,
-      MessagesComponent
    ],
    imports: [
       BrowserModule,
