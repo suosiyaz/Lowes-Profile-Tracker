@@ -1,6 +1,9 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './_guards/auth.guard';
+import { CandidatesComponent } from './candidates/candidates.component';
+import { RequirementsComponent } from './requirements/requirements.component';
+import { F2FInterviewComponent } from './f2f-interview/f2f-interview.component';
 
 export const appRoutes: Routes = [
     { path: '', component: HomeComponent },
@@ -9,9 +12,9 @@ export const appRoutes: Routes = [
         runGuardsAndResolvers: 'always',
         canActivate: [AuthGuard],
         children: [
-            // { path: 'members', component: MemberListComponent },
-            // { path: 'messages', component: MessagesComponent },
-            // { path: 'lists', component: ListsComponent }
+            { path: 'candidates', component: CandidatesComponent },
+            { path: 'requirements', component: RequirementsComponent },
+            { path: 'f2f', component: F2FInterviewComponent }
         ]
     },
     { path: '**', redirectTo: '', pathMatch: 'full' }

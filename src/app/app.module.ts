@@ -13,9 +13,9 @@ import { ErrorInterceptorProvider } from './_services/error.interceptor';
 import { AlertifyService } from './_services/alertify.service';
 import { appRoutes } from './routes';
 import { AuthGuard } from './_guards/auth.guard';
-import { F2FInterviewComponent } from './f2-f-interview/f2-f-interview.component';
 import { CandidatesComponent } from './candidates/candidates.component';
 import { RequirementsComponent } from './requirements/requirements.component';
+import { F2FInterviewComponent } from './f2f-interview/f2f-interview.component';
 
 
 @NgModule({
@@ -25,7 +25,8 @@ import { RequirementsComponent } from './requirements/requirements.component';
       HomeComponent,
       F2FInterviewComponent,
       CandidatesComponent,
-      RequirementsComponent
+      RequirementsComponent,
+      F2FInterviewComponent
    ],
    imports: [
       BrowserModule,
