@@ -13,13 +13,19 @@ import { ErrorInterceptorProvider } from './_services/error.interceptor';
 import { AlertifyService } from './_services/alertify.service';
 import { appRoutes } from './routes';
 import { AuthGuard } from './_guards/auth.guard';
+import { F2FInterviewComponent } from './f2-f-interview/f2-f-interview.component';
+import { CandidatesComponent } from './candidates/candidates.component';
+import { RequirementsComponent } from './requirements/requirements.component';
 
 
 @NgModule({
    declarations: [
       AppComponent,
       NavComponent,
-      HomeComponent
+      HomeComponent,
+      F2FInterviewComponent,
+      CandidatesComponent,
+      RequirementsComponent
    ],
    imports: [
       BrowserModule,
