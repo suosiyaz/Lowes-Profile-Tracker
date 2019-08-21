@@ -26,7 +26,7 @@ import { F2FInterviewComponent } from './f2f-interview/f2f-interview.component';
       F2FInterviewComponent,
       CandidatesComponent,
       RequirementsComponent,
-      F2FInterviewComponent
+      F2FInterviewComponent,
    ],
    imports: [
       BrowserModule,
